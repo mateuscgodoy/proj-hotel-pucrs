@@ -83,6 +83,7 @@ DATABASES = {
         "PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
         "HOST": "db",
         "PORT": 5432,
+        "TEST": {"NAME": "test_" + os.getenv("POSTGRES_DB", "hotel_DB")},
     }
 }
 
